@@ -9,8 +9,9 @@
 
   URL: http://code.google.com/p/html5slides/
 */
-
-var PERMANENT_URL_PREFIX = '../';
+if (typeof(PERMANENT_URL_PREFIX) === "undefined") { 
+   var PERMANENT_URL_PREFIX = '../';
+}
 
 var SLIDE_CLASSES = ['far-past', 'past', 'current', 'next', 'far-next'];
 
