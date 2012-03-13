@@ -97,8 +97,8 @@ body {
 }
 
 .slides.template-default > article:not(.nobackground):not(.biglogo) {
-  background: url(images/jcu_logo_new_small.png) 710px 425px no-repeat;
-              url(images/eresearch-logo-sml.png) 710px 625px no-repeat;
+  background: url(images/jcu-logo-sml.png) 515px 610px no-repeat, 
+              url(images/eresearch-logo-sml.png) 690px 625px no-repeat;
   background-color: white;  
 } 
 
@@ -155,7 +155,7 @@ body {
 /* Slide styles */
 
 .slides.template-default article.biglogo {
-  background: white url(images/google-logo.png) 50% 50% no-repeat;
+  background: white url(images/jcu-logo.png) 50% 50% no-repeat;
 }
 
 .slides.template-io2011 article.biglogo {
