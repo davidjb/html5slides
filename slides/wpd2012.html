@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Presentation</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='../slides.js'></script>
+  </head>
+  
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+    
+    
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+      
+      <!-- Your slides (<article>s) go here. Delete or comment out the
+           slides below. -->
+        
+        
+      
+
+      <article>
+        <h1>
+          World Plone Day 2012
+        </h1>
+        <p>
+        26 April 2012 
+        <br/>
+        (Really 25 April 2012) 
+        <br/>
+        <br/>
+          <img src='images/wpd-logo.png'>
+          
+        </p>
+      </article>
+      
+      <article>
+        <h2>
+          Please ask questions and discuss!
+        </h2>
+      </article>
+
+      <article>
+        <h3>
+          What is <img src="images/plone.png" alt="Plone" />?
+        </h3>
+        <ul>
+          <li>
+          At its most basic, it is a web-based CMS (Content Management System)  
+          </li>
+          <li>
+          But a bit more than your normal CMS...
+          <br />
+            <ul class="smaller">
+              <li>
+              Built-in publication workflow
+              </li>
+              <li>
+              Designed for the web
+              </li>
+              <li>
+              Full-text document indexing
+              </li>
+            </ul>
+          </li>
+          <li>
+          Dynamic, fast, scalable, secure, customisable
+          </li>
+          <li>
+          Open source (<i>free</i>), large community, long-lived (est. 2001)
+          </li>
+          <li>
+          Suitable for collaboration, Intranet, Internet sites and more
+          </li>
+        </ul>
+      </article>
+
+      <article class="nobackground">
+        <h3>
+          What does Plone look like?
+        </h3>
+        <p style="font-size: 80%"> 
+          Anything you want it to <a onclick="document.getElementById('tada-ctls').style.display = 'inline'; return false;">be</a>. 
+          <span style="display:none;" id="tada-ctls">
+          <a onclick="document.getElementById('tada').src='http://example2.ploud.com/'; return false;">Plone</a> |
+          <a onclick="document.getElementById('tada').src='http://example.ploud.com/'; return false;">JCU</a> |
+          <a onclick="document.getElementById('tada').src='http://example.ploud.com/apple'; return false;">Apple</a> |
+          <a onclick="document.getElementById('tada').src='http://example.ploud.com/wikipedia'; return false;">Wikipedia</a>
+          </span>
+
+        </p>
+        <iframe id="tada" src="http://example2.ploud.com/"></iframe>
+
+        </article>
+
+      <article>
+        <h3>Make Plone look like any site in 2 mins 
+            <span style="font-size: 50%">(really)</span></h3>
+        
+        <pre class="prettyprint">
+&lt;rules
+      xmlns="http://namespaces.plone.org/diazo"
+          xmlns:css="http://namespaces.plone.org/diazo/css"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+          &lt;theme href="http://en.wikipedia.org/wiki/Main_Page" /&gt;
+
+          &lt;replace css:theme-children="#mw-content-text" 
+                   css:content-children="#content" /&gt;
+
+      &lt;/rules&gt
+
+        </pre>
+      </article>
+
+      <article>
+        <h3>
+          People using <img src="images/plone.png" alt="Plone" />
+        </h3>
+        <ul>
+          <li>
+          <a href="http://upress.umn.edu/">http://upress.umn.edu/</a>
+          </li>
+          <li>
+          <a href="http://nasascience.nasa.gov">http://nasascience.nasa.gov</a>
+          </li>
+          <li>
+          <a href="http://www.131500.com.au">http://www.131500.com.au</a>
+          </li>
+          <li>
+          <a href="http://www.fbi.gov/">http://www.fbi.gov/</a>
+          </li>
+          <li>
+            ...and a lot more.
+          </li>
+          <li>
+          At JCU
+           <ul>
+            <li>
+            <a href="http://plone-dev.jcu.edu.au:8080/Theme_test">Research @ JCU</a>
+            </li>
+            <li>
+            <a href="https://egrs.jcu.edu.au/">https://egrs.jcu.edu.au</a>
+            </li>
+            <li>
+            <a href="https://eresearch.jcu.edu.au/spaces">https://eresearch.jcu.edu.au/spaces</a>
+            </li>
+           </ul>
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>
+          Research and efforts at JCU 
+        </h3>
+        <ul>
+          <li>
+            eResearch Spaces: free collaborative mini-Plone instances for all. Suitable for: 
+            <ul>
+              <li>Collaboration across insitutions</li>
+              <li>Personal, managed web space</li>
+              <li>Intranet sharing</li>
+            </ul>
+          </li>
+          <li>
+            Research @ JCU: Research Centres and Insititues 
+          </li>
+          <li>
+            eGRS: eGraduate Research School for postgraduates and academics
+          </li>
+        </ul>
+
+      </article>
+
+      <article class='fill nobackground'>
+        <iframe src='https://eresearch.jcu.edu.au/spaces'></iframe>
+      </article>
+
+      <article>
+        <h3>
+          ...and more <span style="font-size: 50%">(things that don't fit elsewhere)</span>
+        </h3>
+
+        <ul>
+          <li>Python (no PHP): better programming and excellent security</li>
+          <li>Runs anywhere (Windows, Mac, Linux); we host on Linux</li>
+          <li>Search-engine friendly: URLs are human readable</li>
+          <li>Professionally managed: Elected non-profit board, best practices used everywhere</li>
+          <li>Multi-lingual and screen-reader compatible</li>
+          <li>Everything customisable in flexible manners</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>
+          Shameless plug
+        </h3>
+        
+        <ul>
+          <li>
+            <a href='http://eresearch.jcu.edu.au'>eresearch.jcu.edu.au</a>
+          </li>
+          <li>
+            We can help support your research.
+            </li>
+        </ul>
+
+        <h4>About me</h4>
+        <ul>
+          <li>
+            David Beitey, eResearch Centre
+          </li>
+          <li>
+          Phone: (07) 4781 6084
+          </li>
+          <li>Always happy to chat about Plone, web, eResearch and tech</li>
+        </ul>
+
+
+        </ul>
+      </article>
+
+    </section>
+
+  </body>
+</html>
