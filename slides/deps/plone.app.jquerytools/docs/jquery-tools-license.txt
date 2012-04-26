@@ -1,0 +1,7 @@
+jquery.tools - The missing UI library for the Web
+
+Copyright (c) 2009 Tero Piirainen
+http://flowplayer.org/tools/
+
+Dual licensed under MIT and GPL 2+ licenses
+http://www.opensource.org/licenses

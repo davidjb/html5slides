@@ -19,6 +19,28 @@
     <meta charset='utf-8'>
     <script
       src='../slides.js'></script>
+    <script src="deps/jquery-1.7.2.min.js"></script>
+    <script src="deps/plone.app.jquerytools/plone/app/jquerytools/browser/jquery.tools.min.js"></script>
+    <script src="deps/plone.app.jquerytools/plone/app/jquerytools/browser/jquery.tools.min.js"></script>
+    <script src="deps/plone.app.jquerytools/plone/app/jquerytools/browser/overlayhelpers.js"></script>
+    <link rel="stylesheet" type="text/css" href="deps/plone.app.jquerytools/plone/app/jquerytools/browser/overlays.css" />
+    <script>
+        (function($){
+          $(document).ready(function() {
+            $('a[href^="http"]').prepOverlay({
+                 subtype: 'iframe',
+                 config: {
+                    onBeforeClose: function (e) {
+                        this.getOverlay().find('iframe').remove();
+                        return true;
+                    },
+                    expose:{color:'#000'}
+                },
+                width: '80%'
+            });
+          });
+        })(jQuery);
+    </script>
   </head>
   
   <style>
@@ -131,6 +153,7 @@
       &lt;/rules&gt
 
         </pre>
+        <p>Obligatory disclaimer: respect copyright.</p>
       </article>
 
       <article>
@@ -195,6 +218,29 @@
 
       <article class='fill nobackground'>
         <iframe src='https://eresearch.jcu.edu.au/spaces'></iframe>
+        </article>
+
+      <article>
+        <h3>
+          Add-on functionality (aka Pimp my Plone)
+        </h3>
+        <p>Flexible framework means anything can be modified in a 
+           reproducible manner. Some examples:
+        </p>
+        <ul>
+          <li>collective.geo: Geographic annotations for Plone
+          (<a class="iframe" href="http://gccc.coastalcoms.com/map">Example</a>)
+          </li>
+          <li>collective.easyslider: web-editable sliders
+          (<a class="iframe" href="https://eresearch.jcu.edu.au/">Example</a>, 
+          <a class="iframe" href="https://plone.jcu.edu.au/cts">Example 2</a>)
+          </li>
+          <li>PloneFormGen: User-editable web-based forms</li>
+          (<a class="iframe" href="https://eresearch.jcu.edu.au/spaces/demo/">Example</a>)
+        </ul>
+        <p>Add-ons open-source at 
+        <a href="https://github.com/collective">github.com/collective</a></p>
+        <p>Approximately 2400 add-ons (April 2012), open-model, hundreds of developers</p>
       </article>
 
       <article>
@@ -203,10 +249,14 @@
         </h3>
 
         <ul>
-          <li>Python (no PHP): better programming and excellent security</li>
+          <li>Python (no PHP): better programming and excellent security:
+          <a class="iframe" href="http://ibm.co/ImhHik">CMS Comparision</a>
+          </li>
           <li>Runs anywhere (Windows, Mac, Linux); we host on Linux</li>
           <li>Search-engine friendly: URLs are human readable</li>
           <li>Professionally managed: Elected non-profit board, best practices used everywhere</li>
+          <li>Supports multiple authentication methods at once (local,
+              LDAP/AD, OpenID, CAS...)</li>
           <li>Multi-lingual and screen-reader compatible</li>
           <li>Everything customisable in flexible manners</li>
         </ul>
@@ -220,24 +270,23 @@
         <ul>
           <li>
             <a href='http://eresearch.jcu.edu.au'>eresearch.jcu.edu.au</a>
-          </li>
-          <li>
-            We can help support your research.
+             - We can help support your research.
             </li>
         </ul>
 
         <h4>About me</h4>
         <ul>
           <li>
-            David Beitey, eResearch Centre
+          David Beitey, <i>eResearch Centre</i> | Phone: (07) 4781 6084
           </li>
           <li>
-          Phone: (07) 4781 6084
           </li>
           <li>Always happy to chat about Plone, web, eResearch and tech</li>
         </ul>
 
         <h4>Happy World Plone Day 2012!</h4>
+        <p>You've just been part of Australia's Number 1 
+        <a href="http://plone.org/events/wpd/2012/hosts">WPD 2012</a> event!</p>
 
         </ul>
       </article>
